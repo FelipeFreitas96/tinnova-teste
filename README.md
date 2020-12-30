@@ -26,8 +26,10 @@ Para instalar, utilize o PowerShell do Windows ou o terminal do Linux os comando
 
 | Método | Endpoint | Parâmetros | Descrição |
 | ------------ | ------------ | ------------ | ------------ |
-| GET | /v1/todo | {} | Listar todos os TODOs |
-| GET | /v1/todo | { id: number } | Mostrar TODO |
-| POST | /v1/todo | { description: string } | Criar um TODO |
-| PUT | /v1/todo | { id: number, description: string } | Alterar um TODO |
-| DELETE | /v1/todo | { id: number } | Deletar um TODO |
+| GET | /v1/veiculos | {} | Retorna todos veículos |
+| GET | /v1/veiculos/find | { veiculo?: string, marca?: string, ano?: integer, vendido?: bool } | Retorna os veículos de acordo com os parâmetros passados |
+| GET | /v1/veiculos/{id} | {} | Retorna os detalhes do veículo |
+| POST | /v1/veiculos | { veiculo: string, marca: string, ano: integer, descricao: string, vendido: bool } | Adiciona um novo veículo |
+| PUT | /v1/veiculos/{id} | { veiculo: string, marca: string, ano: integer, descricao: string, vendido: bool } | Atualiza os dados de um veículo |
+| PATCH | /v1/veiculos/{id} | { veiculo?: string, marca?: string, ano?: integer, descricao?: string, vendido?: bool } | Atualiza apenas alguns dados do veículo |
+| DELETE | /v1/veiculos/{id} | {} | Apaga o veículo |
