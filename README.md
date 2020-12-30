@@ -14,7 +14,7 @@ Para instalar, utilize o PowerShell do Windows ou o terminal do Linux os comando
 
 6. ```docker build -t node-image -f docker/node/Dockerfile .```
 7. ```docker run -p 3333:80 -d --link mariadb-container --rm --name node-container node-image```
-8. ```A API estará disponível em http://localhost:3333/v1/todo```
+8. ```A API estará disponível em http://localhost:3333/v1/veiculos```
 
 ## Sobre
 * Clean Architeture
