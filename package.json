@@ -1,0 +1,34 @@
+{
+  "name": "teste-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:FelipeFreitas96/teste-node.git",
+  "author": "Felipe Freitas <felipe.samidare@hotmail.com> (http://gitshowcase.com/FelipeFreitas96)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/jest": "^26.0.16",
+    "@types/supertest": "^2.0.10",
+    "jest": "^26.6.3",
+    "sucrase": "^3.16.0",
+    "supertest": "^6.0.1",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.0"
+  },
+  "dependencies": {
+    "@test-decorators/jest": "^0.2.0",
+    "@types/typescript": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mariadb": "^2.5.2",
+    "sequelize": "5.21.10",
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "start": "sucrase-node src/main/server.ts",
+    "test:all": "jest --runInBand --passWithNoTests",
+    "test:unit": "npm run test:all --watch -c jest-unit-config.json",
+    "test:integration": "npm run test:all --watch -c jest-integration-config.json",
+    "test:coverage": "npm run test:all --coverage"
+  }
+}

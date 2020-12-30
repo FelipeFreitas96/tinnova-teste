@@ -1,0 +1,5 @@
+/node_modules
+/docker/mariadb/config
+/docker/mariadb/data
+yarn.lock
+/coverage
