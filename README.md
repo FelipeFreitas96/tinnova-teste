@@ -1,5 +1,5 @@
 # 🧠  O que foi utilizado
----
+
 * Clean Architeture
 * TDD
 * MariaDB
@@ -7,7 +7,7 @@
 * Swagger
 
 # ⚙️ Instalando
----
+
 Para instalar, utilize o PowerShell do Windows ou o terminal do Linux os comandos a seguir:
 
 1. ```git clone https://github.com/FelipeFreitas96/tinnova-teste.git```
@@ -24,6 +24,6 @@ Para instalar, utilize o PowerShell do Windows ou o terminal do Linux os comando
 7. ```docker run -p 80:80 -d --link mariadb-container --rm --name node-container node-image```
 
 # 📍  Endpoints
----
+
 ```http://localhost/v1/docs``` para acessar a documentação do Swagger.
 ```http://localhost/v1/vehicles``` para acessar a API.
