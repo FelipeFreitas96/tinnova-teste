@@ -1,4 +1,5 @@
 # 🧠  O que foi utilizado
+
 * Clean Architeture
 * TDD
 * MariaDB
@@ -24,5 +25,6 @@ Para instalar, utilize o PowerShell do Windows ou o terminal do Linux os comando
 
 # 📍  Endpoints
 
-```http://localhost/v1/docs``` para acessar a documentação do Swagger.
-```http://localhost/v1/vehicles``` para acessar a API.
+> ```http://localhost/v1/docs``` para acessar a documentação do Swagger.
+
+> ```http://localhost/v1/vehicles``` para acessar a API.
