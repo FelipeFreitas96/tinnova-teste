@@ -1,7 +1,7 @@
 import { VehicleController } from './vehicle-controller';
-import { AddVehicleModel, DeleteVehicleModel, Vehicle, UpdateVehicleModel } from '../../domain/usecases/vehicle';
+import { AddVehicleModel, DeleteVehicleModel, UpdateVehicleModel } from '../../domain/usecases/vehicle';
 import { VehicleModel } from '../../domain/models/vehicle';
-import { HttpMethod, HttpRequest } from '../protocols/http';
+import { HttpMethod } from '../protocols/http';
 import { BrandValidator } from '../protocols/brand-validator';
 import { DbVehicle } from '../../data/usecases/db-vehicle/db-vehicle';
 import { VehicleDbAdapter } from '../../data/protocols/vehicle-db-adapter';

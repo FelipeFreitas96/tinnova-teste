@@ -29,18 +29,16 @@ describe('Sequelize Vehicle Db Adapter', () => {
             sold: false,
         });
         expect(response).toBeTruthy();
-        expect(response.brand).toBe('any_brand');
-        expect(response.year).toBe(-1);
-        expect(response.description).toBe('any_description');
-        expect(response.sold).toBe(false);
     });
     test('Deveria retornar o Vehicle criado se os dados estiverem válidos', async () => {
         const response = await sut.get(1);
         expect(response).toBeTruthy();
-        expect(response.brand).toBe('any_brand');
-        expect(response.year).toBe(-1);
-        expect(response.description).toBe('any_description');
-        expect(response.sold).toBe(false);
+        expect(response).toMatchObject({
+            brand: 'any_brand',
+            year: -1,
+            description: 'any_description',
+            sold: false,
+        });
     });
     test('Deveria retornar uma lista de 1 Vehicle', async () => {
         const response = await sut.list();
