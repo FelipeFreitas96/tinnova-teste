@@ -83,14 +83,8 @@ export class VehicleController implements Controller {
                     statusCode: ErrorCode.INVALID_REQUEST,
                 })
             );
-        } else if (!addVehicleModel.brand) {
-            return Promise.reject(
-                new ErrorParser({
-                    body: "Marca inválida.",
-                    statusCode: ErrorCode.INVALID_REQUEST,
-                })
-            );
-        } else if(addVehicleModel.brand && !this.brandValidator.isValid(addVehicleModel.brand)) {
+        } else if (!addVehicleModel.brand ||
+                   (addVehicleModel.brand && !this.brandValidator.isValid(addVehicleModel.brand))) {
             return Promise.reject(
                 new ErrorParser({
                     body: "Marca inválida.",
