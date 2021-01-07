@@ -1,6 +1,6 @@
 # 🧠  O que foi utilizado
 
-* Clean Architeture
+* Clean Architecture
 * TDD
 * MariaDB
 * Docker
