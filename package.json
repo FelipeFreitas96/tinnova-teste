@@ -26,9 +26,11 @@
   },
   "scripts": {
     "start": "sucrase-node src/main/server.ts",
-    "test:all": "jest --runInBand --passWithNoTests",
-    "test:unit": "npm run test:all --watch -c jest-unit-config.json",
-    "test:integration": "npm run test:all --watch -c jest-integration-config.json",
-    "test:coverage": "npm run test:all --coverage"
+    "test:all": "jest --runInBand --passWithNoTests --detectOpenHandles",
+    "test:unit": "yarn test:all --watch -c jest-unit-config.json",
+    "test:unit:coverage": "yarn test:unit --coverage",
+    "test:integration": "yarn test:all --watch -c jest-integration-config.json",
+    "test:integration:coverage": "yarn test:integration --coverage",
+    "test:coverage": "yarn test:all --coverage"
   }
 }
