@@ -5,7 +5,7 @@ describe('Sequelize Vehicle Db Adapter', () => {
     let sut: SequelizeVehicleDbAdapter;
     beforeAll(async () => {
         sut = new SequelizeVehicleDbAdapter();
-        await SequelizeHelper.connect();
+        await SequelizeHelper.connect('127.0.0.1');
     });
     afterAll(async () => {
         await sut.truncate();

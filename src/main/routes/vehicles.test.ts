@@ -6,7 +6,7 @@ import app from '../config';
 describe('Vehicles Route', () => {
     let sut: SequelizeVehicleDbAdapter;
     beforeAll(async () => {
-        await SequelizeHelper.connect();
+        await SequelizeHelper.connect('127.0.0.1');
     });
     afterAll(async () => {
         await sut.truncate();

@@ -11,10 +11,10 @@ class SequelizeHelper {
         return this.connection;
     }
 
-    async connect(): Promise<void> {
+    async connect(host: string): Promise<void> {
         this.connection = new Sequelize({
             dialect: 'mariadb',
-            host: process.env.MYSQL_HOST,
+            host,
             username: process.env.MYSQL_ROOT_USER,
             password: process.env.MYSQL_ROOT_PASSWORD,
             database: process.env.MYSQL_DATABASE,
