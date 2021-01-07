@@ -1,3 +1,3 @@
 export interface BrandValidator {
-    isValid(brandToValidate: string): Boolean;
+    isValid(brandToValidate: string): boolean;
 }
