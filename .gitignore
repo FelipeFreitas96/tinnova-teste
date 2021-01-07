@@ -3,4 +3,5 @@
 /docker/mariadb/data
 yarn.lock
 yarn-error.log
+package-lock.json
 /coverage
