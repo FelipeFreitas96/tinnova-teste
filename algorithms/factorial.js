@@ -5,5 +5,6 @@ function factorial(n, number = 1) {
     return factorial(n - 1, number * n);
 } 
 
-const toFactorial = factorial(0);
-console.log(toFactorial);
+const toFactorial = 5;
+const factoredNumber = factorial(toFactorial);
+console.log(`O fatorial de ${toFactorial} é ${factoredNumber}!`);
