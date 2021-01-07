@@ -2,4 +2,5 @@
 /docker/mariadb/config
 /docker/mariadb/data
 yarn.lock
+yarn-error.log
 /coverage
