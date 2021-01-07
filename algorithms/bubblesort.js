@@ -21,7 +21,7 @@ function bubbleSort(arr, length) {
 }
 
 const toSortArray = [5, 3, 2, 4, 7, 1, 0, 6];
-console.log("Antes: " + toSortArray);
+console.log("Antes: ", toSortArray);
 
 const sortedValue = bubbleSort(toSortArray);
-console.log("Depois: " + sortedValue);
+console.log("Depois: ", sortedValue);
