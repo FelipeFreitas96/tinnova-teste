@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   version: "1.0.0"
-  title: "TINNOVA - Documentação de teste"
+  title: "TINNOVA - Documentação do teste"
   description: "Aplicação de controle de veículos."
   termsOfService: "http://swagger.io/terms/"
   contact:
