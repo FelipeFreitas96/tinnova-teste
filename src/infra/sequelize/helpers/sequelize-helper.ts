@@ -1,11 +1,11 @@
 import { Sequelize } from "sequelize";
-import useTodoSequelizeModel from "../models/todo-sequelize-model";
+import useVehicleSequelizeModel from "../models/vehicle-sequelize-model";
 import dotenv from "dotenv";
 dotenv.config();
 
 class SequelizeHelper {
     private connection!: Sequelize;
-    public TodoSequelizeModel: any;
+    public VehicleSequelizeModel: any;
 
     getConnection(): Sequelize {
         return this.connection;
@@ -19,7 +19,7 @@ class SequelizeHelper {
             password: process.env.MYSQL_ROOT_PASSWORD,
             database: process.env.MYSQL_DATABASE,
         });
-        this.TodoSequelizeModel = useTodoSequelizeModel(this.connection);
+        this.VehicleSequelizeModel = useVehicleSequelizeModel(this.connection);
         await this.sync();
     }
 
