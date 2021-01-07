@@ -7,7 +7,7 @@ function swap(arr, a, b) {
 function bubbleSort(arr, length) {
     if (length < 1) {
         return arr;
-    } if (!length) {
+    } else if (!length) {
         length = arr.length - 1;
     }
 
