@@ -6,9 +6,10 @@ export const makeRouteAdapter = (controller: Controller) => {
     return async (req: Request, res: Response) => {
         const httpMethod: HttpMethod = req.method as HttpMethod;
         const httpRequest: HttpRequest = {
-            body: req.body
+            body: req.body,
+            params: req.params,
         };
-
+        
         const response = await controller.handle(httpMethod, httpRequest);
         res.status(response.statusCode).json(response.body);
     }
