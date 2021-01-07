@@ -21,6 +21,7 @@ Para instalar, utilize o PowerShell do Windows ou o terminal do Linux os comando
 > docker run -p 3306:3306 -d -v ${pwd}/docker/mariadb/config:/etc/mysql/conf.d -v ${pwd}/docker/mariadb/data:/var/lib/mysql --env-file .env --rm --name mariadb-container mariadb-image
 
 > docker build -t node-image -f docker/node/Dockerfile .
+
 > docker run -p 80:80 -d --link mariadb-container --rm --name node-container node-image
 
 # 📍  Endpoints
