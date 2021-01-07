@@ -4,6 +4,6 @@
     "preset": "ts-jest",
     "testEnvironment": "node",
     "testMatch": [
-        "**/?(*.)+(test).[tj]s?(x)"
+        "**/*.test.ts"
     ]
 }
