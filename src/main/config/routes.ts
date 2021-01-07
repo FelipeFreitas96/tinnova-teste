@@ -1,10 +1,10 @@
-import { Express, Router} from 'express';
-import { makeRouteAdapter } from '../adapters/routeAdapter';
-import { makeTodoController } from '../factories/todoController';
+import { Express, Router } from 'express';
+import useVehiclesRoute from '../routes/vehicles';
+import useSwaggerRoute from '../routes/swagger';
 
 export const useRoutes = (app: Express) => {
     const router = Router();
-    const todoController = makeTodoController();
-    router.use('/v1/todo', makeRouteAdapter(todoController));
-    app.use(router);
+    useVehiclesRoute(router);
+    useSwaggerRoute(router);
+    app.use('/v1', router);
 }
