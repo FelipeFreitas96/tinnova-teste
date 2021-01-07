@@ -1,3 +1,5 @@
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=FelipeFreitas96_tinnova-teste&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=FelipeFreitas96_tinnova-teste) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=FelipeFreitas96_tinnova-teste&metric=alert_status)](https://sonarcloud.io/dashboard?id=FelipeFreitas96_tinnova-teste)
+
 # 🧠  O que foi utilizado
 
 * Clean Architecture
